@@ -1,0 +1,61 @@
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(56, 52, 52);
+    grid-column: 1/3;
+}
+
+header p {
+    color: white;
+    padding: 10px;
+}
+
+
+nav {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+
+
+}
+
+main {
+    background-color: #ccc;
+    min-height: 430px;
+    grid-column: 1;
+}
+
+aside {
+    grid-column: 2;
+    min-height: 430px;
+}
+
+main,
+aside {
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(56, 52, 52);
+    min-height: 120px;
+    grid-column: 1/3;
+
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
