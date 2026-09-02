@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* =========================
+   GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Course title */
+
+#course-title {
+    display: block;
+    background-color: #1f557d;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+}
+
+nav a:hover {
+    background-color: #1f557d;
+    color: white;
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    font-weight: 400;
+    margin: 1.5rem 0;
+}
+
+
+/* =========================
+   TWO CARD LAYOUT
+   ========================= */
+
+.card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+}
+
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0.6rem;
+    background-color: #1f557d;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/* =========================
+   ABOUT ME
+   ========================= */
+
+.about-content {
+    padding: 1rem;
+    min-height: 150px;
+}
+
+.about-content p {
+    line-height: 1.6;
+}
+
+
+/* Profile image */
+
+.profile-image {
+    width: 130px;
+    height: auto;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+
+/* =========================
+   NIGERIA
+   ========================= */
+
+.card h3 {
+    clear: both;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 2rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* Country content */
+
+.country-content {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.country-content figure {
+    margin: 0;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.country-image {
+    width: 130px;
+    height: auto;
+    display: block;
+}
+
+.country-content figcaption {
+    font-size: 0.75rem;
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+.country-content p {
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+
+/* =========================
+   WEB DEV RESOURCES
+   ========================= */
+
+.card ul {
+    margin-top: 5rem;
+    padding-left: 2.5rem;
+}
+
+.card li {
+    margin-bottom: 0.7rem;
+}
+
+.card li a {
+    color: #0000aa;
+}
+
+.card li a:hover {
+    color: #1f557d;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    max-width: 1100px;
+    margin: 1rem auto 0;
+    padding: 1rem;
+    background-color: #1f557d;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.4rem;
+}
+
+.last-modify {
+    color: greenyellow;
+    font-size: 0.8rem;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 120px;
+    }
+
+    .country-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .country-content p {
+        text-align: left;
+    }
+}
