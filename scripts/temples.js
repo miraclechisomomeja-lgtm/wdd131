@@ -13,3 +13,6 @@ document.querySelector("#currentyear").textContent = currentYear;
 
 document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
+
+const heading = document.querySelector("p");
+heading.style.fontWeight = "bold"
