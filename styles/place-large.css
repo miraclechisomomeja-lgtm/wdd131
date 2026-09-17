@@ -35,7 +35,6 @@
         margin: 0.5rem 0;
         display: grid;
         grid-template-columns: 120px 1fr;
-        column-gap: rem;
         text-align: left;
 
     }
