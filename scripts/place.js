@@ -7,8 +7,8 @@ document.querySelector("#lastModified").textContent =
 
 
 
-const temp = 10;
-const wind = 5;
+const temp = 8;
+const wind = 12;
 
 function calculateWindChill(temp, wind) {
     return 13.12 + (0.6215 * temp) - (11.37 * Math.pow(wind, 0.16)) + (0.3965 * temp * Math.pow(wind, 0.16));
