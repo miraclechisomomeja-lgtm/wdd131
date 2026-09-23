@@ -102,7 +102,7 @@ function displayTemples(temples) {
                 <p><strong>DEDICATED:</strong> ${temple.dedicated}</p>
                 <p><strong>AREA:</strong> ${temple.area.toLocaleString()} sq ft</p>
             </figcaption>
-            <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy" width="400" height="250">
+            <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy">
 
         `;
 
@@ -164,8 +164,6 @@ document.querySelector("#currentyear").textContent = currentYear;
 document.querySelector("#lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
 
-const heading = document.querySelector("p");
-heading.style.fontWeight = "bold"
 
 
 
