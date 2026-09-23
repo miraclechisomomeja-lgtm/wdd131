@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+main img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    max-width: 100%;
+    margin: 1rem auto;background-color: black;
+    opacity: 0;
+    animation: fadeIn 12s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+}

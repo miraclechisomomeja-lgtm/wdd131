@@ -27,7 +27,7 @@
         padding: 1rem;
         margin: -1rem;
         margin-bottom: 1rem;
-        text-align: left;
+        text-align: left;border-bottom: 5px solid red;
     }
 
     .temple-info p,

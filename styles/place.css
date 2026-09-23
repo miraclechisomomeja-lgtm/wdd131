@@ -22,12 +22,10 @@ header {
     text-align: center;
 }
 
-main {
-    margin-top: 1rem;
-}
-
 .hero {
     position: relative;
+    border-top: 10px solid red;
+    border-bottom: 7px solid darkgreen;
 }
 
 .hero picture,
@@ -80,7 +78,7 @@ main {
 }
 
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color);border-top: 8px solid red;
     color: var(--accent-color);
     padding: 1rem;
     text-align: center;

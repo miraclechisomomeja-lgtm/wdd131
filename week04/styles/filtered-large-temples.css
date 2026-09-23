@@ -1,0 +1,31 @@
+@media (min-width:37.5rem) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header p {
+        margin: 0;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;font-size: 1.25rem;
+    }
+
+    nav li {
+        flex: 1;
+    }
+
+    .temple-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
