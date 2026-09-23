@@ -5,6 +5,8 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -106,7 +108,7 @@ figcaption {
     font-weight: bold;
     font-size: 0.7rem;
     text-align: center;
-    height: 130px;
+    height: 120px;
 }
 
 figcaption h2 {
