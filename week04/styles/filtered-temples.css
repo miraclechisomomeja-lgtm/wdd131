@@ -10,6 +10,7 @@ body {
 header {
     background-color: #1f3c5b;
     color: white;
+    width: 100%;
     padding: 1rem;
 }
 
@@ -66,6 +67,7 @@ nav a:hover {
 
 main {
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -82,6 +84,7 @@ main h1 {
 
 figure {
     margin: 0;
+    width: 100%;
     padding: 1rem;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
@@ -100,11 +103,10 @@ figure img {
 
 figcaption {
     padding: 0.5rem;
-    padding-bottom: 0.75rem;
     font-weight: bold;
     font-size: 0.7rem;
     text-align: center;
-    height: 120px;
+    height: 130px;
 }
 
 figcaption h2 {
@@ -122,6 +124,7 @@ footer {
     color: white;
     padding: 1rem;
     text-align: center;
+    width: 100%;
 }
 
 footer p {
