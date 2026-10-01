@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(31, 7, 7);
+    color: white;
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+}
+
+form {
+    background-color: rgb(211, 185, 185);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+label[for="review"] {
+    margin-top: 2rem;
+}
+
+label[for="userName"] {
+    margin-top: 2rem;
+}
+
+input[type="date"] {
+    margin-bottom: 1rem;
+}
+
+form label,
+form p {
+    display: block;
+    margin-top: 1rem;
+}
+
+form p+p {
+    margin-top: 0;
+}
+
+form>label {
+    font-weight: bold;
+}
+
+form>p {
+    font-weight: bold;
+}
+
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.4rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid#a8dadc;
+    border-color: #1d3557;
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: #1d3557;
+    transform: scale(1.4);
+}
+
+input[type="radio"] {
+    accent-color: #1d3557;
+
+    transform: scale(1.4);
+    margin-top: 0.4rem;
+}
+
+form label:has(input[type="radio"]) {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0.5rem 1.5rem;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #457b9d;
+}
+
+input[type="submit"]:focus {
+    outline: 3px solid#a8dadc;
+    outline-offset: 2px;
+}
+
+footer {
+    background-color: rgb(31, 7, 7);
+    color: white;
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        max-width: 700px;
+        margin: 2rem auto;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+}

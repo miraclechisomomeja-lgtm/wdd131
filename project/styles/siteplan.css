@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --navy: #0B1F3A;
+    --blue: #2563EB;
+    --white: #FFFFFF;
+    --gray: #F3F4F6;
+    --text: #1F2937;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--white);
+}
+
+header {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--navy);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 2rem auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--gray);
+    border-radius: 10px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--navy);
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    border-bottom: 3px solid var(--blue);
+    padding-bottom: 0.4rem;
+}
+
+.font-example {
+    font-size: 1.3rem;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.color-card {
+    overflow: hidden;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.color-card h3,
+.color-card p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.color-sample {
+    height: 80px;
+}
+
+.navy .color-sample {
+    background-color: var(--navy);
+}
+
+.blue .color-sample {
+    background-color: var(--blue);
+}
+
+.white .color-sample {
+    background-color: var(--white);
+    border-bottom: 1px solid #d1d5db;
+}
+
+.gray .color-sample {
+    background-color: var(--gray);
+}
+
+.wireframe {
+    margin: 1rem auto 2rem;
+    padding: 1rem;
+    border: 3px solid var(--navy);
+    background-color: var(--white);
+}
+
+.mobile-wireframe {
+    max-width: 400px;
+}
+
+.desktop-wireframe {
+    max-width: 100%;
+}
+
+.wf-header  {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--navy);
+    font-weight: 700;font-size: 1rem;
+}
+
+.wf-header img {
+    width: 50px;
+    height: auto;
+    background-color: white;
+
+}
+
+.wf-hero {
+    display: flex;
+    min-height: 180px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border: 2px dashed var(--blue);
+    background-color: var(--gray);
+}
+
+button {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--blue);
+    font-weight: 700;
+}
+
+.wf-section {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border: 2px dashed #9ca3af;
+}
+
+.wf-product {
+    display: flex;
+    min-height: 120px;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 2px dashed #9ca3af;
+    background-color: var(--gray);
+}
+
+.product-row,
+.service-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.services {
+    min-height: 100px;
+}
+
+.wf-footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--navy);
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--navy);
+}
+
+code {
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    background-color: #e5e7eb;
+}
+
+@media (max-width: 700px) {
+    .color-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-row,
+    .service-row {
+        flex-direction: column;
+    }
+
+    .desktop-wireframe {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .color-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+}
