@@ -20,7 +20,7 @@
         <form method="get" action="review.html">
             <label for="product">Product Name</label>
             <select id="product" name="product" required>
-                <option value="" disabled selected>Choose a Product</option>
+                <option value="" disabled selected>Select a Product</option>
             </select>
 
             <p>Overall Rating</p>
@@ -49,6 +49,10 @@
 
             <p>Which features did you find useful in the product?</p>
             <p><em>(Check all that apply)</em></p>
+
+            <label for="durability">
+                <input type="checkbox" id="durability" name="features" value="durability">Durability
+            </label>
 
             <label for="ease-of-use">
                 <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">Ease of Use
