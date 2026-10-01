@@ -19,7 +19,7 @@ header h1 {
 main {
     max-width: 600px;
     margin: 1.5rem auto;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 form {
@@ -131,8 +131,8 @@ input[type="submit"]:focus {
 footer {
     background-color: rgb(31, 7, 7);
     color: white;
-    padding: 2rem;
-    font-size: 1.2rem;
+    padding: 1rem;
+    font-size: 1rem;
     text-align: center;
 }
 
