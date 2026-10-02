@@ -27,14 +27,18 @@ header {
     background-color: var(--navy);
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+.site-logo {
+    display: block;
+    width: 220px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 1rem;
+    background-color: white;
+    padding-right: 24px;
 }
 
 header p {
-    margin-bottom: 0;
+    margin-bottom: 0;font-size: 1.5rem;
 }
 
 main {
@@ -123,14 +127,15 @@ h2 {
     max-width: 100%;
 }
 
-.wf-header  {
+.wf-header {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
     color: var(--white);
     background-color: var(--navy);
-    font-weight: 700;font-size: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .wf-header img {
