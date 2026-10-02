@@ -34,7 +34,6 @@ header {
     height: auto;
     margin: 0 1rem;
     background-color: white;
-    padding-right: 24px;
 }
 
 header p {
@@ -139,7 +138,7 @@ h2 {
 }
 
 .wf-header img {
-    width: 50px;
+    width: 20px;
     height: auto;
     background-color: white;
 
