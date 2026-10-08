@@ -325,8 +325,6 @@ function displayCart() {
         image.src = product.image;
         image.alt = product.alt;
         image.loading = "lazy";
-        image.width = 100;
-        image.height = 100;
         image.classList.add("cart-item-image");
 
         const details = document.createElement("div");
@@ -524,8 +522,6 @@ function displayProducts(products) {
         image.src = product.image;
         image.alt = product.alt;
         image.loading = "lazy";
-        image.width = 220;
-        image.height = 220;
 
         const name = document.createElement("h3");
         name.textContent = product.name;
