@@ -457,7 +457,7 @@ function displayCheckoutSummary() {
         summary.appendChild(message);
 
         if (checkoutForm) {
-            checkoutForm.Style.display = "none";
+            checkoutForm.style.display = "none";
         }
 
         return;
@@ -465,7 +465,7 @@ function displayCheckoutSummary() {
 
     if (checkoutForm) {
 
-        checkoutForm.Style.display = "block";
+        checkoutForm.style.display = "block";
     }
 
     let total = 0;
