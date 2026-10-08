@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Submit your order request to Miracle Tech Store.">
+
+    <meta name="author" content="Chisom Miracle Omeja">
+
+    <title>Checkout | Miracle Tech Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/store.css">
+    <script src="scripts/store.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html">
+            <img src="images/logo-square.webp" alt="Miracle Tech Store logo" width="480" height="147">
+        </a>
+        <h1>MIRACLE TECH STORE</h1>
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h1>Checkout</h1>
+            <p>Submit your order request.</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Order Summary</h2>
+            <div id="checkout-summary">
+
+            </div>
+
+            <h2>Customer Information</h2>
+
+            <form id="checkout-form" action="thankyou.html" method="get">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input type="text" id="name" name="name" required autocomplete="name">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input type="email" id="email" name="email" required autocomplete="email">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input type="tel" id="phone" name="phone" required autocomplete="tel">
+
+                <label for="address">
+                    Delivery Address
+                </label>
+
+                <textarea id="address" name="address" rows="4" required autocomplete="street-address"></textarea>
+
+                <button type="submit" class="button">
+                    Submit Order
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p><a href="index.html">Home |</a></p>
+        <p><a href="services.html">Services |</a></p>
+        <p><a href="references.html">References |</a></p>
+
+        <p>&copy; <span id="currentyear"></span>
+            Miracle Tech Store
+        </p>
+
+
+    </footer>
+</body>
+
+</html>

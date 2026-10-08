@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contact Miracle Tech Store for product inquiries, technology services, and support.">
+
+    <meta name="author" content="Chisom Miracle Omeja">
+
+    <title>Miracle Tech Store | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/store.css">
+    <script src="scripts/store.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html">
+            <img src="images/logo-square.webp" alt="Miracle Tech Store logo" width="480" height="147">
+        </a>
+        <h1>MIRACLE TECH STORE</h1>
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Page Heading -->
+        <section class="page-heading">
+
+            <h1>Contact Us</h1>
+
+            <p>
+                Have a question about our products or services?
+                Send us a message and we'll be happy to assist you.
+            </p>
+
+        </section>
+
+
+        <!-- Contact Area -->
+        <section class="contact-area">
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+
+                <h2>Send Us a Message</h2>
+
+                <form method="get" action="thankyou.html">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+
+                    <label for="inquiry">
+                        What can we help you with?
+                    </label>
+
+                    <select id="inquiry" name="inquiry" required>
+
+                        <option value="" disabled selected>
+                            Select an option
+                        </option>
+
+                        <option value="product">
+                            Product Inquiry
+                        </option>
+
+                        <option value="service">
+                            Service Request
+                        </option>
+
+                        <option value="support">
+                            Technical Support
+                        </option>
+
+                        <option value="general">
+                            General Question
+                        </option>
+
+                    </select>
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Store Location -->
+            <div class="location-section">
+
+                <h2>Find Us</h2>
+
+                <p>
+                    Visit Miracle Tech Store or contact us for assistance with
+                    products and technology services.
+                </p>
+
+                <div class="map-container">
+
+                    <iframe src="https://www.google.com/maps?q=Orlu,Imo,Nigeria&output=embed"
+                        title="Map showing Orlu, Imo State, Nigeria" loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p><a href="products.html">Products |</a></p>
+        <p><a href="references.html">References |</a></p>
+        <p>&copy; <span id="currentyear"></span>
+            Miracle Tech Store
+        </p>
+
+
+    </footer>
+
+</body>
+
+</html>

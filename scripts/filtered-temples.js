@@ -58,7 +58,7 @@ const temples = [
     },
     {
         templeName: "Abidjan Ivory Coast",
-        location: "Abidjan, Ivory Coast",
+        location: "Abi'djan, Ivory Coast",
         dedicated: "2025, May, 25",
         area: 17362,
         imageUrl: "images/abidjan-ivory-coast.jpeg"
