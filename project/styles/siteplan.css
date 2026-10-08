@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 :root {
     --navy: #0B1F3A;
@@ -34,7 +34,6 @@ header {
     height: auto;
     margin: 0 1rem;
     background-color: white;
-    padding-right: 24px;
 }
 
 header p {
