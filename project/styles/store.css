@@ -904,6 +904,16 @@ footer a {
         font-size: 1.8rem;
     }
 
+   .product-actions {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .product-actions .button {
+      width: auto;
+      flex-grow: 1;
+   }
+
 
     /* Product Actions */
 
