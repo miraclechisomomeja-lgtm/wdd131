@@ -50,7 +50,7 @@ header {
     background-color: var(--navy);
 }
 
-site-name {
+.site-name {
     color: var(--white);
     text-align: center;
 }
