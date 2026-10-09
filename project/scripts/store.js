@@ -524,8 +524,11 @@ function displayProducts(products) {
         image.src = product.image;
         image.alt = product.alt;
         image.loading = "lazy";
+<<<<<<< HEAD
         image.width = 800;
         image.height = 600;
+=======
+>>>>>>> 9961b947a6bad2053a79c8636029a2317f916faf
 
         const name = document.createElement("h3");
         name.textContent = product.name;
