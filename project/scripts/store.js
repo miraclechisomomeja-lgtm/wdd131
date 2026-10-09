@@ -325,8 +325,8 @@ function displayCart() {
         image.src = product.image;
         image.alt = product.alt;
         image.loading = "lazy";
-        image.width = 100;
-        image.height = 100;
+        image.width = 800;
+        image.height = 600;
         image.classList.add("cart-item-image");
 
         const details = document.createElement("div");
@@ -459,7 +459,7 @@ function displayCheckoutSummary() {
         summary.appendChild(message);
 
         if (checkoutForm) {
-            checkoutForm.Style.display = "none";
+            checkoutForm.style.display = "none";
         }
 
         return;
@@ -467,7 +467,7 @@ function displayCheckoutSummary() {
 
     if (checkoutForm) {
 
-        checkoutForm.Style.display = "block";
+        checkoutForm.style.display = "block";
     }
 
     let total = 0;
@@ -524,8 +524,8 @@ function displayProducts(products) {
         image.src = product.image;
         image.alt = product.alt;
         image.loading = "lazy";
-        image.width = 220;
-        image.height = 220;
+        image.width = 800;
+        image.height = 600;
 
         const name = document.createElement("h3");
         name.textContent = product.name;
