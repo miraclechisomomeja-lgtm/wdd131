@@ -355,7 +355,6 @@ h3 {
     min-width: 0;
     height: 100%;
     min-width: 0;
-    container-type: inline-size;
     padding: 1.25rem;
     border-radius: 12px;
     background-color: var(--white);
@@ -409,7 +408,6 @@ h3 {
     flex-direction: column;
     align-items: stretch;
     gap: 0.75rem;
-    align-items: stretch;
     margin-top: auto;
 }
 
@@ -423,19 +421,6 @@ h3 {
     font-size: 0.9rem;
     width: 100%;
     margin: 0;
-}
-
-@container (min-width: 300px) {
-    .product-actions {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .product-actions .button {
-        width: auto;
-        flex-grow: 1;
-    }
 }
 
 
@@ -1081,6 +1066,16 @@ footer a {
     .hero {
         min-height: 600px;
     }
+
+    .product-actions {
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+    }
+   .product-actions .button {
+      width: auto;
+      flex-grow: 1;
+   }
 
 
     /* Product Images */
