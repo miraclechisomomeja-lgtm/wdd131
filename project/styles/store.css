@@ -65,9 +65,8 @@ header>a {
 }
 
 header img {
-    width: 90px;
+    width: 60px;
     height: 60px;
-    padding: 0.35rem;
     object-fit: contain;
     background-color: var(--white);
     border-radius: 10px;
