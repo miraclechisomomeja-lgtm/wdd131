@@ -723,6 +723,7 @@ function init() {
     updateCartCount();
     displayCart();
     displayCheckoutSummary();
+    displayCustomerName();
 }
 
 init();
