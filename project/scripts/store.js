@@ -673,7 +673,7 @@ function updateProductHeading(category) {
 }
 
 function setupContactForm() {
-    const contactForm = document.querySelector("#contact-form");
+    const contactForm = document.querySelector(".contact-form form");
 
     if (!contactForm) {
         return;
