@@ -672,6 +672,37 @@ function updateProductHeading(category) {
     }
 }
 
+function setupContactForm() {
+    const contactForm = document.querySelector("#contact-form");
+
+    if (!contactForm) {
+        return;
+    }
+
+    contactForm.addEventListener("submit", function () {
+        const nameInput = document.querySelector("#name");
+        const customerName = nameInput.value.trim();
+
+        sessionStorage.setItem("customerName", customerName);
+    });
+}
+
+
+function displayCustomerName() {
+    const heading = document.querySelector("#thankyou-heading");
+
+    if (!heading) {
+        return;
+    }
+
+    const customerName = sessionStorage.getItem("customerName");
+
+    if (customerName) {
+        heading.textContent = `Thank You, ${customerName}!`;
+        sessionStorage.removeItem("customerName");
+    }
+}
+
 // Start the website JavaScript
 function init() {
     displayYear();
