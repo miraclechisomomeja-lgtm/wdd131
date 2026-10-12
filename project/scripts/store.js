@@ -14,17 +14,6 @@ function displayYear() {
 }
 
 
-// Display the last modified date
-function displayLastModified() {
-    const lastModified = document.lastModified;
-    const modifiedElement = document.querySelector("#lastModified");
-
-    if (modifiedElement) {
-        modifiedElement.textContent = `Last Modified: ${lastModified}`;
-    }
-}
-
-
 // Control the mobile navigation menu
 function setupNavigation() {
     const menuButton = document.querySelector("#menu-button");
@@ -706,7 +695,6 @@ function displayCustomerName() {
 // Start the website JavaScript
 function init() {
     displayYear();
-    displayLastModified();
     setupNavigation();
     setupOutsideMenuClick();
 
